@@ -3,8 +3,7 @@
 
 Convert::Convert(){}
 
-int Convert::binaryToDecimal(String value)
-{
+int Convert::binaryToDecimal(String value){
   long result = 0;
     int exponent = 0;
     for(int i = value.length(); i > 0; i--){
@@ -17,9 +16,17 @@ int Convert::binaryToDecimal(String value)
     result -= 1;
     return result;
 }
+int Convert::hexaToDecimal(String value){
 
-String Convert::decimalToBinary(int value)
-{
+}
+int Convert::octalToDecimal(String value){
+
+}
+
+
+
+
+String Convert::decimalToBinary(int value){
   String result = "";
   if(value == 0){
     return "0";
@@ -33,4 +40,10 @@ String Convert::decimalToBinary(int value)
     value /= 2;
   }
   return result;
+}
+String Convert::decimalToHexa(int value){
+
+}
+String Convert::decimalToOctal(int value){
+  
 }
