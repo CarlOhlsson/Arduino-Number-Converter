@@ -14,6 +14,7 @@ class Convert
     String decimalToBinary(int value);
     String decimalToHexa(int value);
     String decimalToOctal(int value);
+
 };
 
 #endif

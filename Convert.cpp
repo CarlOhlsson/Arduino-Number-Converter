@@ -4,22 +4,30 @@
 Convert::Convert(){}
 
 int Convert::binaryToDecimal(String value){
-  long result = 0;
+    float result = 0;
     int exponent = 0;
+    int base = 2;
+
     for(int i = value.length(); i > 0; i--){
       int currentLocation = value.substring(i-1,i).toInt();
       if(currentLocation == 1){
-        result = result + pow((currentLocation*2), exponent) +1;
+        result += (currentLocation * pow(base, exponent));
       }
       exponent++;
     }
-    result -= 1;
-    return result;
+    return result + 0.5;
 }
+
+
 int Convert::hexaToDecimal(String value){
+  Serial.println("hexaToDecimal");
+  return 1;
 
 }
+
 int Convert::octalToDecimal(String value){
+  Serial.println("octalToDecimal");
+  return 1;
 
 }
 
@@ -41,9 +49,15 @@ String Convert::decimalToBinary(int value){
   }
   return result;
 }
+
 String Convert::decimalToHexa(int value){
+  Serial.println("decimalToHexa");
+  return "";
 
 }
+
 String Convert::decimalToOctal(int value){
-  
+  Serial.println("decimalToOctal");
+  return "";
+
 }
