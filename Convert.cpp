@@ -20,8 +20,18 @@ int Convert::binaryToDecimal(String value){
 
 
 int Convert::hexaToDecimal(String value){
-  Serial.println("hexaToDecimal");
-  return 1;
+    float result = 0;
+    int exponent = 0;
+    int base = 2;
+
+    for(int i = value.length(); i > 0; i--){
+      int currentLocation = value.substring(i-1,i).toInt();
+      if(currentLocation >= 0 || currentLocation <= 9){
+        result += (currentLocation * pow(base, exponent));
+      }
+      exponent++;
+    }
+    return result + 0.5;
 
 }
 
