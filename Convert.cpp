@@ -3,48 +3,35 @@
 
 Convert::Convert(){}
 
-int Convert::binaryToDecimal(String value){
-    float result = 0;
-    int exponent = 0;
+long Convert::binaryToDecimal(String value){
     int base = 2;
-
-    for(int i = value.length(); i > 0; i--){
-      int currentLocation = value.substring(i-1,i).toInt();
-      if(currentLocation == 1){
-        result += (currentLocation * pow(base, exponent));
-      }
-      exponent++;
-    }
-    return result + 0.5;
+    int length = value.length() +1;
+    char testBuff[length];
+    value.toCharArray(testBuff, length);
+    return strtol(testBuff, NULL, base);
 }
 
 
-int Convert::hexaToDecimal(String value){
-    float result = 0;
-    int exponent = 0;
-    int base = 2;
-
-    for(int i = value.length(); i > 0; i--){
-      int currentLocation = value.substring(i-1,i).toInt();
-      if(currentLocation >= 0 || currentLocation <= 9){
-        result += (currentLocation * pow(base, exponent));
-      }
-      exponent++;
-    }
-    return result + 0.5;
-
+long Convert::hexaToDecimal(String value){
+    int base = 16;
+    int length = value.length() +1;
+    char testBuff[length];
+    value.toCharArray(testBuff, length);
+    return strtol(testBuff, NULL, base);
 }
 
-int Convert::octalToDecimal(String value){
-  Serial.println("octalToDecimal");
-  return 1;
-
+long Convert::octalToDecimal(String value){
+    int base = 8;
+    int length = value.length() +1;
+    char testBuff[length];
+    value.toCharArray(testBuff, length);
+    return strtol(testBuff, NULL, base);
 }
 
 
 
 
-String Convert::decimalToBinary(int value){
+String Convert::decimalToBinary(long value){
   String result = "";
   if(value == 0){
     return "0";
@@ -60,13 +47,12 @@ String Convert::decimalToBinary(int value){
   return result;
 }
 
-String Convert::decimalToHexa(int value){
-  Serial.println("decimalToHexa");
-  return "";
-
+String Convert::decimalToHexa(long value){
+  Serial.println("decimalToOctal");
+  return valueAsHexadecimal;
 }
 
-String Convert::decimalToOctal(int value){
+String Convert::decimalToOctal(long value){
   Serial.println("decimalToOctal");
   return "";
 

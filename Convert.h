@@ -8,12 +8,12 @@ class Convert
 {
   public:
     Convert();
-    int binaryToDecimal(String value);
-    int hexaToDecimal(String value);
-    int octalToDecimal(String value);
-    String decimalToBinary(int value);
-    String decimalToHexa(int value);
-    String decimalToOctal(int value);
+    long binaryToDecimal(String value);
+    long hexaToDecimal(String value);
+    long octalToDecimal(String value);
+    String decimalToBinary(long value);
+    String decimalToHexa(long value);
+    String decimalToOctal(long value);
 
 };
 
