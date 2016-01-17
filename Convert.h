@@ -14,7 +14,8 @@ class Convert
     String decimalToBinary(long value);
     String decimalToHexa(long value);
     String decimalToOctal(long value);
-
+  private:
+  	String fourBitsToHex(String value);
 };
 
 #endif
