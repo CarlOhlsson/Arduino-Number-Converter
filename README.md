@@ -9,12 +9,8 @@ It could also be used to generate an integer from a string containing a hexadeci
 Currently Supporting
 --------------------
 	dec > bin
-	dec > hex
-	dec > oct
-
 	bin > dec
-	hex > dec
-	oct > dec
+	
 
 
 Future Improvements
