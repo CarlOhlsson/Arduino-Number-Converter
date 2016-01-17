@@ -8,8 +8,13 @@ It could also be used to generate an integer from a string containing a hexadeci
 
 Currently Supporting
 --------------------
-	dec > bin
-	bin > dec
+	Decimal 	-> Binary
+	Decimal 	-> Hexadecimal
+	Decimal 	-> Octal
+	
+	Binary 		-> Decimal
+	Hexadecimal 	-> Decimal
+	Octal 		-> Decimal
 	
 
 
