@@ -2,7 +2,7 @@
 Arduino Converter
 -----------------
 
-This is a library for converting integer / long numbers in decimal form to other bases like hexadecimal och binary.
+This is a library for converting integer / long numbers in decimal form to other bases like hexadecimal and binary.
 It could also be used to generate an integer / long from a string containing a hexadecimal, binary or octal number.
 
 
