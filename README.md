@@ -9,11 +9,11 @@ It could also be used to generate an integer from a string containing a hexadeci
 Currently Supporting
 --------------------
 	Decimal 	-> Binary
-	Decimal 	-> Hexa
+	Decimal 	-> Hexadecimal
 	Decimal 	-> Octal
 	
 	Binary 		-> Decimal
-	Hexa 		-> Decimal
+	Hexadecimal -> Decimal
 	Octal 		-> Decimal
 	
 
