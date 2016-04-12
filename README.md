@@ -17,8 +17,3 @@ Currently Supporting
 	Octal 		-> Decimal
 	
 
-
-Future Improvements
--------------------
-	1: Add support for float and double numbers
-
