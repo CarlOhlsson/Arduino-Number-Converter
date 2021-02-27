@@ -12,7 +12,7 @@ Currently Supporting
 	Decimal 	-> Octal
 	
 	Binary 		-> Decimal
-	Hexadecimal -> Decimal
+	Hexadecimal 	-> Decimal
 	Octal 		-> Decimal
 	
 
