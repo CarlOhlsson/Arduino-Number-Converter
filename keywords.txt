@@ -1,0 +1,8 @@
+Convert	KEYWORD1
+binaryToDecimal	KEYWORD2
+hexaToDecimal	KEYWORD2
+octalToDecimal	KEYWORD2
+decimalToBinary	KEYWORD2
+decimalToHexa	KEYWORD2
+decimalToOctal	KEYWORD2
+fourBitsToHex	KEYWORD2
